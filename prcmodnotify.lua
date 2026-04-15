@@ -48,22 +48,22 @@ Tabs.Main:Button({
 -- // LOGIC // --
 Connections.OnPRCStaffJoin.Event:Connect(function(Info)
     local modName = Info.Player and Info.Player.Name or "Unknown"
-    local alertMsg = "PRC Mod Detected: " .. modName
+    local alertMsg = "fuckass prc (pedofile roleplay community) mod name: " .. modName " joined"
 
     if antiStaffMode == "Kick" then
         LocalPlayer:Kick(alertMsg)
 
     elseif antiStaffMode == "Notify" then
         WindUI:Notify({
-            Title = "STAFF JOINED",
+            Title = "PRC JOINED",
             Content = alertMsg,
             Duration = 10,
         })
 
     elseif antiStaffMode == "Respawn and Notify" then
         WindUI:Notify({
-            Title = "STAFF JOINED",
-            Content = "Respawning to avoid detection: " .. modName,
+            Title = "PRC JOINED",
+            Content = "Respawning cuz u fucking picked it: " .. modName,
             Duration = 10,
         })
         
